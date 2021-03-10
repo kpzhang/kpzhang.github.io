@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>Essential Data Skills for Business Analytics</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="">
+                    <meta name="author" content="">
+                        
+                        <!-- Le styles -->
+                        <link href="css/bootstrap.css" rel="stylesheet">
+                            <style>
+                                body {
+                                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                                }
+                            </style>
+                            <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+                                
+                                <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+                                <!--[if lt IE 9]>
+                                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                                 <![endif]-->
+                                
+                                <!-- Fav and touch icons -->
+                                <!--link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+                                 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+                                 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                                 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                 <link rel="shortcut icon" href="assets/ico/favicon.png"-->
+                                </head>
+    
+    <body>
+        
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="syllabus.html">Syllabus</a></li>
+                            <li><a href="materials.html">Materials</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            
+            <div class="page-header">
+                <h1>BMGT 404: Essential Data Skills for Business Analytics (Spring 2020)</h1>
+            </div>
+            
+            <a href="http://www.rhsmith.umd.edu/faculty-research/academic-departments/decision-operations-information-technologies">Decisions, Operations &amp; Information Technologies</a><br>
+            <a href="http://www.rhsmith.umd.edu/">Robert H. Smith School of Business</a><br>
+            <p></p>
+            Instructor: Kunpeng Zhang (<font color='blue'>kzhang@rhsmith.umd.edu</font>)<br>
+            Lectures: Monday/Wednesday, 8:00 -- 9:15 (0401), 9:30 -- 10:45 (0501)<br>
+            Room: VMH 3522<br>
+            Office Hour: TBD<br>
+            Room: VMH 4316<br>
+            <p></p>
+            Teaching Assistant: Yash Srivastava (<font color='blue'>yash.srivastava@rhsmith.umd.edu</font>)<br>
+            Room: TBD<br>
+            Office hours: TBD<br>
+            <p>
+            <h3>About the Course</h3>
+            
+            <p>Since the data grows exponentially and becomes complex, we need computational methods to collect, store, and analyze them in order to be successful in science, engineering, business, and other professions. BMGT404, “Essential Data Skills for Business Analytics”, is an introductory programming class that meets this need. You will learn how to write computer programs in Python language to solve real-world problems and how to use tableau to explain your results as a report in a more readable way. This will be useful in your research and your jobs in the future. </p>
+            
+            <p>This class is designed for students that want to learn to computer programming for data science. This course guides students through the basic Python programming language, from initial concepts to final data analysis using python and external packages.</p>
+            
+            <p>The (tentative) list of topics that we plan to cover:
+            <ul>
+            <li>Basic programming concepts</li>
+            <li>Install and run Python programs</li>
+            <li>Variables and expressions</li>
+            <li>Control structures: sequence, branch, iteration</li>
+            <li>List, tuple, dictionary in Python</li>
+            <li>Functions, parameters, and recursion in Python</li>
+            <li>String operations</li>
+            <li>File operations and modules</li>
+            <li>Regular expression</li>
+            <li>Visualization</li>
+            <li>Database operations</li>
+            <li>Data manipulation: Pandas</li>
+            <li>Scientific computing: NumPy</li>
+            <li>Natural language processing package: NLTK</li>
+            <li>Machine learning in Python: Mlpy and Scikit-learn</li>
+            </ul>
+            </p>
+            
+            <h5>Prerequisites</h5>
+            <p>The course does not require any prior programming background or experiences. Students that enroll in the class are expected to have some basic familiarity with programming in other languages, at the introductory level (i.e., R, matlab, SAS, etc.), however no prior knowledge of Python is required. Since this course contains hands-on labs, (I prefer) you are expected to bring your laptop to every class (and remember to charge it, so that it lasts for the duration of the class).</p>
+            
+            <h5>Course Objectives</h5>
+            <p>At the completion of this course, students will be able to:
+            <ul>
+            <li>Understand the architecture, basic elements, and the planning of data science</li>
+            <li>Understand and use standard sequential, conditional, and iterative control structure of automated data analysis through computers</li>
+            <li>Understand and use off-the-shelf packages to solve business related applications, such as resource allocation, finance, accounting, information system management, and many others</li>
+            <li>Understand how to manipulate data (store, query, and summarize) using database for analyzing structured data</li>
+            <li>Understand and use computer programming for basic interactive web applications<li>
+            <li>Understand and use computer programming to collect, analyze, and visualize business data</li>
+            </ul>
+            </p>
+            
+            <h5>Tools we will use</h5>
+            <p>The tools that we will learn to use in the class include:
+            <ul>
+            <li>Jupyter Notebook (<a href='https://jupyter.org/'>https://jupyter.org/</a>)</li>
+            <li>Scientific python package Numpy (<a href="http://www.numpy.org/">http://www.numpy.org/</a>)</li>
+            <li>Using Python and SQL to create and query relational databases, using MySQL</li>
+            <li>Python Pandas (<a href="http://pandas.pydata.org/">http://pandas.pydata.org/</a>) for handling and visualizing structured data and time series</li>
+            <li>Matplotlib (<a href="http://matplotlib.org/">http://matplotlib.org/</a>) for visualization</li>
+            <li>•	Machine learning packages: Mlpy (<a href="http://mlpy.sourceforge.net/docs/3.5/">http://mlpy.sourceforge.net/docs/3.5/</a>) and scikit-learn (<a href="http://scikit-learn.org/stable/documentation.html">http://scikit-learn.org/stable/documentation.html</a>) </li>
+            </ul>
+            </p>
+            
+            <h3>About me</h3>
+            
+            <p>If you're interested in my research, here is
+            <a href="https://terpconnect.umd.edu/~kpzhang/">my homepage</a>. The
+            best way to get in touch with me is via email, at kzhang@rhsmith.umd.edu. I
+            am available by appointment to discuss material from class, homework assignments, the labs, etc.  Email is the best
+            way to reach me to set up an appointment, and it's also a good way to
+            get a quick answer to a simple question.</p>
+            
+            <h3>Resources</h3>
+            
+            <p>While we do not have any required textbook for the course, the following books will be useful references for the material that we will be covering in class.
+            <ul>
+            <li>nbviewer: A simple way to share Jupyter Notebooks (<a href="http://nbviewer.jupyter.org/">http://nbviewer.jupyter.org/</a>).</li>
+            <li><a href="http://www.amazon.com/gp/product/B00FGUS948/">Learn Python the Hard Way</a> This book is also available for <a href="http://learnpythonthehardway.org/">free on the web</a>. We will not be really using this book but it is a useful textbook for those that have never been exposed to programming before.</li>
+            <li><a href="http://www.amazon.com/gp/product/1449319793">Python for Data Analysis</a>: This is a useful book, discussing in details the “Python pandas” library, which provided much useful functionality for data management in Python.</li>
+            <li><a href="http://www.amazon.com/gp/product/B00GX9HM76/">Python Data Visualization Cookbook</a>: This is a book for those interested in studying deeper visualization in Python.</li>
+            <li><a href="https://developers.google.com/edu/python/">Google’s Python class</a></li>
+            <li><a href="http://learnpythonthehardway.org/">Learn Python the Hard Way</a></li>
+            <li><a href="http://www.codecademy.com/tracks/python">Code Academy, Python track</a></li>
+            <li><a href="https://developers.google.com/edu/python://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks#statistics-machine-learning-and-data-science">Useful IPython notebooks</a></li>
+            </ul>
+            </p>
+            
+            <p></p>
+            
+            <h3>Textbooks</h3>
+            <p>The principal textbooks for this course are:</p>
+            
+            <div class="row">
+                <div class="span9">
+                    
+                    <table class="table">
+                        <tbody>
+                            <tr><td>Think Python – How to Think Like a Computer Scientist</td>
+                                <td><a href="http://www.greenteapress.com/thinkpython/html/index.html" class="btn btn-small btn-inverse">Online version</a>
+                                </td></tr>
+                            
+                            <tr><td>The Python Tutorial</td>
+                                <td><a href="https://docs.python.org/2/tutorial/" class="btn btn-small btn-inverse">Online version</a>
+                                </td></tr>
+                            
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+            
+            <h3>Assignments</h3>
+            <p>You are free to submit late, but there is a 10% grade penalty for every additional day after the deadline. Given the generous late submission policy, penalties are strictly enforced, and no extensions are granted. Please plan accordingly, and do not leave submission for the last minute.</p>
+            
+            <p>Plagiarism Policy: Inevitably in a programming course, it seems that a few people will turn in work that is not their own. You should understand that it is usually easy to detect copying of programs -- even when a program is modified to try to disguise its source. Copying a program, or letting someone else copy your program, is a form of academic dishonesty and the penalties can be found here (<a href="http://www.rhsmith.umd.edu/about-us/academic-integrity">http://www.rhsmith.umd.edu/about-us/academic-integrity</a>).</p>
+ 
+            
+            <h3>Grading</h3>
+            
+            <p>Components of the final grade are as follows:</p>
+            
+            <div class="row">
+                <div class="span4">
+                    
+                    <table class="table table-striped">
+                        <thead>
+                            <tr><td><b>Component</b></td><td style="text-align:right"><b>Weight</b></td></tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr><td>Attendance</td>         <td style="text-align:right">5%*1=5%</td></tr>
+                            <tr><td>Midterm exam</td>         <td style="text-align:right">25%*1=25%</td></tr>
+                            <tr><td>Quizzes</td>         <td style="text-align:right">10%*2=20%</td></tr>
+                            <tr><td>Project</td>         <td style="text-align:right">15%*1=15%</td></tr>
+                            <tr><td>Assignments</td>         <td style="text-align:right">5%*7=35%</td></tr>
+                            <tr><td><b>Total</b></td>         <td style="text-align:right">100%</td></tr>
+                            
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+            
+            <p>Letter grades are assigned as follows:</p>
+            
+            <div class="row">
+                <div class="span4">
+                    
+                    <table class="table table-striped">
+                        <thead>
+                            <tr><td><b>Letter</b></td><td style="text-align:right"><b>Points</b></td></tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr><td>A+</td>         <td style="text-align:right">100-97</td></tr>
+                            <tr><td>A</td>         <td style="text-align:right">96.9-93</td></tr>
+                            <tr><td>A-</td>         <td style="text-align:right">92.9-90</td></tr>
+                            <tr><td>B+</td>         <td style="text-align:right">89.9-87</td></tr>
+                            <tr><td>B</td>         <td style="text-align:right">86.9-83</td></tr>
+                            <tr><td>B-</td>         <td style="text-align:right">82.9-80</td></tr>
+                            <tr><td>C+</td>         <td style="text-align:right">79.9-77</td></tr>
+                            <tr><td>C</td>         <td style="text-align:right">76.9-73</td></tr>
+                            <tr><td>C-</td>         <td style="text-align:right">72.9-70</td></tr>
+                            <tr><td>D+</td>         <td style="text-align:right">69.9-67</td></tr>
+                            <tr><td>D</td>         <td style="text-align:right">66.9-63</td></tr>
+                            <tr><td>D-</td>         <td style="text-align:right">62.9-60</td></tr>
+                            <tr><td>F</td>         <td style="text-align:right">below 60</td></tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+            
+            <h3>Academic Integrity</h3>
+            <p>The University is an academic community.  Its fundamental purpose is the pursuit of knowledge.  Like all other communities, the University can function properly only if its members adhere to clearly established goals and values.</p>
+            
+            <p>The University’s Code of Academic Integrity is designed to ensure that the principles of honesty and integrity are upheld.  You are expected to adhere to this Code.  The Smith School does not tolerate academic dishonesty.  All acts of academic dishonesty will be dealt with in accordance with the provisions of this Code.  Anyone suspected of academic dishonesty will be referred to the Office of Student Conduct immediately.  Please visit the <a href="http://www.studenthonorcouncil.umd.edu/code.html">website</a> for more information on the University’s Code of Academic Integrity.</p>
+            
+            <p>Academic Dishonesty: any of the following acts, when committed by a student, shall constitute academic dishonesty:
+            <ul>
+            <li>Cheating: intentionally using or attempting to use unauthorized materials, information, or study aids in any academic exercise.</li>
+            <li>Fabrication: intentionally and unauthorized falsification or invention of any information or citation in any academic exercise.</li>
+            <li>Facilitating academic dishonesty:  intentionally or knowingly helping or attempting to help another to violate any provision or the Code of Academic Integrity.</li>
+            <li>Plagiarism:  intentionally or knowingly representing the words or ideas of another as one’s own in any academic exercise. To avoid plagiarism, always cite your sources. You can view more about citing sources at: http://www.lib.umd.edu/tl/guides/citation-tools. Feel free to use any of the styles listed here.</li>
+            </ul>
+            </p>
+            <p>To help you avoid unintentional cheating, the following table lists levels of collaboration that are acceptable for each type of graded exercise. If you are ever unclear about acceptable levels of collaboration, please ask!</p>
+            <img src='css/policy.png' align="middle" width="70%" height="70%">
+            
+            
+            <h3>Class Attendance</h3>
+            
+            <p>University policies excuse the absences of students for illness, religious observances, participation in University activities at the request of university authorities and compelling circumstances beyond the student's control. Regular attendance and participation in this class is the best way to grasp the concepts and principles being discussed. However, in the event that a class must be missed due to illness, the policy in this class is as follows:<br>
+            1.	For every medically necessary absence from class (lecture, recitation, or lab), a reasonable effort should be made to notify the instructor in advance of the class. When returning to class, students must bring a note identifying the date of and reason for the absence, and acknowledging that the information in the note is accurate.<br>
+            2.	If a student is absent more than 3 times, the instructor may require documentation signed by a health care professional.<br>
+            3.	If a student is absent on days when tests are scheduled, he or she is required to notify the instructor in advance, and upon returning to class, bring documentation of the illness, signed by a health care professional.<br>
+            4.  No students can receive A if absence 5 or more classes. 
+            </p>
+            
+            <b>Accommodations for Disabilities.</b> The University is legally
+            obligated to provide appropriate accommodations for students with
+            documented disabilities.  Accommodations will be made only in
+            accordance with University policy.  Students who are entitled to
+            accommodations due to disabilities must first set up an appointment
+            with the <a href="http://www.counseling.umd.edu/DSS/">Disability
+                Support Services (DSS)</a>. To permit adequate planning, this process
+            must be completed and I must be notified by DSS at least two weeks
+            before the session in which the accommodation is required.</p>
+            
+            <h3>Technology</h3>
+            <p>The use of cellular phones, tablets, or computers for non-course purposes will not be allowed without the prior consent of the presiding faculty member. Students using phones during class or participating in other disruptive activities will be asked to leave out of respect for fellow students and faculty. Eating or drinking during skills activities, texting/web surfings, working on other courses' material, or other activities that distract from course activities are not allowed. Audio or video recording of any course activity needs express permission of the instructors.</p>
+            
+            
+            <h3>Tentative Schedule</h3>
+            
+            <p>Here is a tentative schedule of lectures, readings, and labs for this course. We will try to keep approximately to this schedule.<br>
+            (Note that we may change the schedule during the semester.)</p>
+            
+            <div class="row">
+                <div class="span4">
+                    
+                    <table class="table table-striped">
+                        <thead>
+                            <tr><td><b>Session</b></td><td style="text-align:right"><b>Topic</b></td></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><br>1</td>         <td style="text-align:right">Introduction to Python<br>Install and run a Python program (Jupyter Notebook</td></tr>
+                            <tr><td>2</td>         <td style="text-align:right">Variables, expressions, and statements</td></tr>
+                            <tr><td>3</td>         <td style="text-align:right">Condition statements (if-else)</td></tr>
+                            <tr><td>3</td>         <td style="text-align:right">Quiz - 1</td></tr>
+                            <tr><td>4</td>         <td style="text-align:right">Loop structure</td></tr>
+                            <tr><td>5</td>         <td style="text-align:right">Lists, tuples, and dictionaries</td></tr>
+                            <tr><td>6</td>         <td style="text-align:right">Functions, parameters, and recursion</td></tr>
+                            <tr><td>7</td>         <td style="text-align:right">File operations</td></tr>
+                            <tr><td>8</td>         <td style="text-align:right">String operations</td></tr>
+                            <tr><td>9</td>         <td style="text-align:right">Midterm</td></tr>
+                            <tr><td>10</td>         <td style="text-align:right">Modules</td></tr>
+                            <tr><td>11</td>         <td style="text-align:right">Regular expression</td></tr>
+                            <tr><td>12</td>         <td style="text-align:right">Visualization</td></tr>
+                            <tr><td>12</td>         <td style="text-align:right">Quiz - 2</td></tr>
+                            <tr><td>13</td>         <td style="text-align:right">Database operations (MySQL)</td></tr>
+                            <tr><td>14</td>         <td style="text-align:right">Data manipulation: Pandas</td></tr>
+                            <tr><td>15</td>         <td style="text-align:right">Scientific computing: NumPy</td></tr>
+                            <tr><td>16</td>         <td style="text-align:right">Text mining: NLTK</td></tr>
+                            <tr><td>17</td>         <td style="text-align:right">Machine learning in Python</td></tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+
+            
+            <p style="padding-bottom: 100px"/>
+            
+        </div> <!-- /container -->
+        
+        <!-- Le javascript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap-transition.js"></script>
+        <script src="assets/js/bootstrap-alert.js"></script>
+        <script src="assets/js/bootstrap-modal.js"></script>
+        <script src="assets/js/bootstrap-dropdown.js"></script>
+        <script src="assets/js/bootstrap-scrollspy.js"></script>
+        <script src="assets/js/bootstrap-tab.js"></script>
+        <script src="assets/js/bootstrap-tooltip.js"></script>
+        <script src="assets/js/bootstrap-popover.js"></script>
+        <script src="assets/js/bootstrap-button.js"></script>
+        <script src="assets/js/bootstrap-collapse.js"></script>
+        <script src="assets/js/bootstrap-carousel.js"></script>
+        <script src="assets/js/bootstrap-typeahead.js"></script>
+        
+    </body>
+</html>
