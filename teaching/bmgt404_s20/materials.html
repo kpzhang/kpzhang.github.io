@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>Essential Data Skills for Business Analytics</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="">
+                    <meta name="author" content="">
+                        
+                        <!-- Le styles -->
+                        <link href="css/bootstrap.css" rel="stylesheet">
+                            <style>
+                                body {
+                                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                                }
+                            </style>
+                            <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+                                
+                                <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+                                <!--[if lt IE 9]>
+                                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                                 <![endif]-->
+                                
+                                <!-- Fav and touch icons -->
+                                <!--link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+                                 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+                                 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                                 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                 <link rel="shortcut icon" href="assets/ico/favicon.png"-->
+                                </head>
+    
+    <body>
+        
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="syllabus.html">Syllabus</a></li>
+                            <li class="active"><a href="materials.html">Materials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            
+            <div class="page-header">
+                <h2>Essential Data Skills for Business Analytics (Spring 2020)</h2>
+            </div>
+            
+            <section id="schedule">
+                <div>
+                    <h3>Schedule of Classes</h3>
+                    
+                    <table class="table table-striped table-condensed">
+                        <thead>
+                            <tr><td><b>Session</b></td>
+                                <td><b>Topic</b></td>
+                                <td><b>Assignment (due)</b></td></tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr><td>1</td><td><a href="#session1">Introduction</a></td><td></td></tr>
+                            
+                            <tr><td>2</td><td><a href="#session2">Variables, expressions, and statements</a></td><td></td></tr>
+                            
+                            <tr><td>3</td><td><a href="#session3">Condition statements</a></td><td><a href="./assignments/assignment1.pdf">Assignment #1</a></td></tr>
+                            
+                            <tr><td>4</td><td><a href="#session4">Loop structure</a></td><td><a href="./assignments/assignment2.pdf">Assignment #2</a></td></tr>
+                            
+                            <tr><td>5</td><td><a href="#session5">Lists, tuples, and dictionaries</a></td><td></td></tr>
+                            
+                            <tr><td>6</td><td><a href="#session6">Functions and parameters</a></td><td><a href="./assignments/#">Assignment #3</a></td></tr>
+                            
+                            <tr><td>7</td><td><a href="#session7">String operations</a></td><td></td></tr>
+                            
+                            <tr><td>8</td><td><a href="#session8">Files and Modules</a></td><td><a href="./assignments/#">Assignment #4</a></td></tr>
+                            
+                            
+                            <!--tr><td>9</td><td>October 21 &amp; 23</td><td><a href="#session9">Midterm exam</a></td><td><a href="lecture_notes/#"><font color='red'>Practice Exam</font></a></td></tr>
+                            
+                            <tr><td>10</td><td>October 28 &amp; 30</td><td><a href="#session10">Database operations</a></td><td><a href="./assignments/#">Assignment #5</a></td></tr>
+                            
+                            <tr><td>11</td><td>November 4 &amp; 6</td><td><a href="#session11">Data manipulations in Python: Pandas</a></td><td><a href="./assignments/#">Assignment #6</a></td></tr>
+                            
+                            <tr><td>12</td><td>November 11 &amp; 13</td><td><a href="#session12">Optimization and statistics: SciPy</a></td><td></td></tr>
+                            
+                            <tr><td>13</td><td>November 18 &amp; 20</td><td><a href="#session13">Optimization and statistics: SciPy</a></td><td><a href=""></a></td></td></tr>
+                            
+                            <tr><td>14</td><td>November 25 &amp; December 2</td><td><a href="#session14">Machine learning: Mlpy and scikit-learn</a></td><td><a href="./lecture_notes/8_lab.zip">Assignment #7</a></td></tr>
+                            
+                            <tr><td>15</td><td>December 4 &amp; 9</td><td><a href="#session15">Text mining</a></td><td></td></tr>
+                            
+                                <td></td></tr-->
+                            
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </section>
+            
+            <section id="session1" style="padding-top:35px">
+                <div>
+                    <h3>Session 1: Introduction to Python</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 1: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html">Introduction</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="https://docs.python.org/3/tutorial/index.html">The Python Tutorial</a>
+                            <ul>
+                                <li>Chapter 1: <a href="https://docs.python.org/3/tutorial/appetite.html">Whetting Your Appetite</a></li>
+                                <li>Chapter 2: <a href="https://docs.python.org/3/tutorial/interpreter.html">Using the Python Interpreter</a></li>
+                                <li>Chapter 3: <a href="https://docs.python.org/3/tutorial/introduction.html">An Informal Introduction to Python</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/1_introduction.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a>                    
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            
+            <section id="session2" style="padding-top:35px">
+                <div>
+                    <h3>Session 2: Variables, Expressions, Statements</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 2: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html">Variables, expressions and statements</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="http://interactivepython.org/runestone/static/pip/SimplePythonData/simpledata.html">Interactive Python: variables, expressions,and statements</a></li>
+                        <li><a href="http://www.tutorialspoint.com/python/index.htm">Tutorialspoint</a>
+                            <ul>
+                                <li>Page 4: <a href="http://www.tutorialspoint.com/python/python_basic_syntax.htm">Basic syntax</a></li>
+                                <li>Page 5: <a href="http://www.tutorialspoint.com/python/python_variable_types.htm">Variable types</a></li>
+                                <li>Page 6: <a href="http://www.tutorialspoint.com/python/python_basic_operators.htm">Basic operators</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/2_basics.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/2_file.py" class="btn btn-small btn-info" style="width: 75px">Practice</a>
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session3" style="padding-top:35px">
+                <div>
+                    <h3>Session 3: Conditional statements</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 4: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html">Condtionals and recursion</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="http://interactivepython.org/runestone/static/pip/Selection/selection.html">Decisions and selection</a></li>
+                        <li><a href="http://www.tutorialspoint.com/python/python_decision_making.htm">Tutorialspoint</a></li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/3_condition.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/3_file.py" class="btn btn-small btn-info" style="width: 75px">Practice</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            
+            <section id="session4" style="padding-top:35px">
+                <div>
+                    <h3>Session 4: Loop structure</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 6: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap06.html">Iteration</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="http://interactivepython.org/runestone/static/pip/Iteration/iteration.html">Iteration</a></li>
+                        <li><a href="http://www.tutorialspoint.com/python/python_loops.htm">Tutorialspoint: Loops</a></li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/4_loop.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/4_file.py" class="btn btn-small btn-info" style="width: 75px">Practice</a> &nbsp;
+                     <a href="lecture_notes/chess_board.png" class="btn btn-small btn-info" style="width: 75px">Chess Borad</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session5" style="padding-top:35px">
+                <div>
+                    <h3>Session 5: Lists, tuples, and dictionaries</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 8: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap08.html">Lists</a></li>
+                                <li>Chapter 9: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap09.html">Tuples</a></li>
+                                <li>Chapter 10: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap10.html">Dictionaries</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="http://interactivepython.org/runestone/static/pip/Sequences/index.html#lists">Lists</a></li>
+                        <li><a href="http://interactivepython.org/runestone/static/pip/Sequences/tuples.html">Tuples</a></li>
+                        <li><a href="http://interactivepython.org/runestone/static/pip/Dictionaries/dictionaries.html">Dictionaries</a></li>
+                        <li><a href="http://www.tutorialspoint.com/python/python_lists.htm">Tutorialspoint: Lists</a></li>
+                        <li><a href="http://www.tutorialspoint.com/python/python_tuples.htm">Tutorialspoint: Tuples</a></li>
+                        <li><a href="http://www.tutorialspoint.com/python/python_dictionary.htm">Tutorialspoint: Dictionaries</a></li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/5_types.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/3_lab.pdf" class="btn btn-small btn-info" style="width: 75px">Lab Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session6" style="padding-top:35px">
+                <div>
+                    <h3>Session 6: 	Functions and parameters</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 3: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap03.html">Functions</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="http://interactivepython.org/runestone/static/pip/Functions/functions.html">Functions</a></li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/6_functions.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/4_lab.pdf" class="btn btn-small btn-info" style="width: 75px">Lab Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session7" style="padding-top:35px">
+                <div>
+                    <h3>Session 7: 	String operations</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 7: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap07.html">Strings</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="http://interactivepython.org/runestone/static/pip/StringFormatting/interpolation.html">String Formatting</a></li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/7_string.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/5_lab.pdf" class="btn btn-small btn-info" style="width: 75px">Lab Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            
+            <section id="session8" style="padding-top:35px">
+                <div>
+                    <h3>Session 8: 	Files and modules</h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/index.html">How to Think Like a Computer Scientist</a>
+                            
+                            <ul>
+                                <li>Chapter 11: <a href="http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap11.html">Files and exceptions</a></li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="http://www.tutorialspoint.com/python/python_files_io.htm">TutorialPoint: Python Files I/O</a></li>
+                        <li><a href="http://www.tutorialspoint.com/python/python_modules.htm">TutorialPoint: Python Modules</a></li>
+                        <li><a href="http://interactivepython.org/runestone/static/pip/Files/files.html">Files</a></li>
+                        <li><a href="http://interactivepython.org/runestone/static/pip/PythonModules/modules.html">Python modules</a></li>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/8_file_module.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/6_lab.zip" class="btn btn-small btn-info" style="width: 75px">Lab Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            <!--
+            <section id="session10" style="padding-top:35px">
+                <div>
+                    <h3>Session 10: Database operations <small>April 3 &amp; April 5</small></h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://www.mysqltutorial.org/python-mysql/">Python-MySQL tutorial</a>
+                        <li><a href="https://dev.mysql.com/doc/refman/5.7/en/windows-installation.html">Install MySQL on Windows</a>
+                        <li><a href="https://dev.mysql.com/doc/refman/5.7/en/osx-installation.html">Install MySQL on Mac</a>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/10_database.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/7_lab.zip" class="btn btn-small btn-info" style="width: 75px">Lab Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            
+            <section id="session11" style="padding-top:35px">
+                <div>
+                    <h3>Session 11: Data manipulations in Python: Pandas <small>April 10 &amp; April 12</small></h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://pandas.pydata.org/pandas-docs/stable/10min.html">10 Minutes to Pandas</a>
+                        <li><a href="http://pandas.pydata.org/pandas-docs/stable/tutorials.html">Pandas Tutorial</a>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/11_pandas.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session12" style="padding-top:35px">
+                <div>
+                    <h3>Session 12: Optimization and statistics: SciPy <small>April 17 &amp; April 19</small></h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="https://docs.scipy.org/doc/numpy/user/quickstart.html">NumPy Tutorial</a>
+                            <li><a href="https://docs.scipy.org/doc/scipy-0.18.1/reference/tutorial/index.html">SciPy Tutorial</a>
+                                </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/12_scipy_numpy.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session13" style="padding-top:35px">
+                <div>
+                    <h3>Session 13: Machine Learning <small>May 1 &amp; May 3</small></h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://mlpy.sourceforge.net/">Mlpy</a>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/8_lab.zip" class="btn btn-small btn-primary" style="width: 75px">Lab Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session15" style="padding-top:35px">
+                <div>
+                    <h3>Session 14: Text mining in Python <small>May 08 &amp; May 10</small></h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="https://docs.python.org/2/library/re.html">regular expressions</a>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/14_text_mining.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session15" style="padding-top:35px">
+                <div>
+                    <h3>Session 15: Tableau <small>May 02 &amp; May 04</small></h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li><a href="http://duelingdata.blogspot.com/">Tableau blog</a>
+                            </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/13_tableau.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            <section id="session16" style="padding-top:35px">
+                <div>
+                    <h3>Session 16: Final exam review <small>May 09 &amp; May 11</small></h3>
+                    
+                    <h4>Readings <small>(Recommended)</small></h4>
+                    
+                    <ul>
+                        <li>All lecture notes, labs, and assignments</a>
+                    </ul>
+                    
+                    <p style="padding-top: 5px"/>
+                    
+                    <h4>Download files</h4>
+                    
+                    <p><a href="lecture_notes/14_final_review.pdf" class="btn btn-small btn-primary" style="width: 75px">Lecture Notes</a> &nbsp;
+                    <a href="lecture_notes/practice-final.pdf" class="btn btn-small btn-primary" style="width: 80px">Practice Exam</a>
+                    </p>
+                    
+                    <p style="padding-top: 20px"><a href="#">Back to top</a></p>
+                    
+                </div>
+            </section>
+            
+            -->
+        
+            
+            <p style="padding-top:100px" />
+            
+        </div> <!-- /container -->
+        
+        <!-- Le javascript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap-transition.js"></script>
+        <script src="assets/js/bootstrap-alert.js"></script>
+        <script src="assets/js/bootstrap-modal.js"></script>
+        <script src="assets/js/bootstrap-dropdown.js"></script>
+        <script src="assets/js/bootstrap-scrollspy.js"></script>
+        <script src="assets/js/bootstrap-tab.js"></script>
+        <script src="assets/js/bootstrap-tooltip.js"></script>
+        <script src="assets/js/bootstrap-popover.js"></script>
+        <script src="assets/js/bootstrap-button.js"></script>
+        <script src="assets/js/bootstrap-collapse.js"></script>
+        <script src="assets/js/bootstrap-carousel.js"></script>
+        <script src="assets/js/bootstrap-typeahead.js"></script>
+        
+    </body>
+</html>
