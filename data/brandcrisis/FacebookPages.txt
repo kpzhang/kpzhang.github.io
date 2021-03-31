@@ -44,12 +44,9 @@ Facebook_ID , Facebook_Name
 224383614973 , Subway
 113385204488 , Wendy's
 134615383218473 , Burger King
-22092443056 , Starbucks
 6979393237 , Dunkin' Donuts
 7144906559 , KFC (Yum! Brands)
-18595834696 , Taco Bell (Yum! Brands)
 50245567013 , McDonald's
-15704546335 , FOXNews.com
 13652355666 , USATODAY.com
 86680728811 , ABCNEWS.com
 273864989376427 , MSNBC.com
@@ -72,13 +69,11 @@ Facebook_ID , Facebook_Name
 6604386669 , Mercedes-Benz (Daimler)
 101616856688 , Subaru
 90671958533 , Lexus (Toyota)
-169890760789 , Volkswagen
 75764238259 , Buick (GM)
 107926874274 , Honda (Honda)
 197052454200 , Toyota (Toyota)
 77589292295 , Chevrolet (GM)
 5353808700 , GMC (GM)
-8103318119 , Target
 156773665364 , Kia
 7737305975 , Chrysler (Chrysler)
 22166130048 , Ford (Ford)
@@ -103,7 +98,6 @@ Facebook_ID , Facebook_Name
 355123234584843 , VF
 95181800661 , Levi Strauss
 92645906441 , Hanesbrands
-15087023444 , Nike
 182162001806727 , Adidas (includes Reebok)
 199459463461557 , MillerCoors
 439382756092669 , Anheuser-Busch InBev
@@ -132,9 +126,7 @@ Facebook_ID , Facebook_Name
 9122810019 , Barnes & Noble
 152431441489088 , Citigroup
 11465191261 , JPMorgan Chase
-152789358067261 , Wells Fargo
 179590995428478 , Bank of America
-12854644836 , Nordstrom
 153542981344073 , Bed Bath & Beyond
 1396450970569871 , UnitedHealth
 101432317199 , Blue Cross and Blue Shield
@@ -162,12 +154,9 @@ Facebook_ID , Facebook_Name
 53475637527 , Talking Stick Resort Arena
 20582642681 , Sam's Club
 105014211842 , JetBlue
-6806028948 , Southwest
 28488837485 , Alaska
-125472670805257 , Delta
 7003656077 , American
 53960272605 , Allegiant
-199504650087085 , United
 103386926699 , Frontier
 125762892900 , Hilton
 126851494019482 , Hyatt
@@ -575,7 +564,6 @@ Facebook_ID , Facebook_Name
 6499393458 , Alex Jones
 15925638948 , IMDb
 120859921174 , Movie Talkies
-21543405100 , Chick-fil-A
 69813760388 , Sean Hannity
 142237522483061 , HLN News Now
 38427060266 , J-Rocks
@@ -631,7 +619,6 @@ Facebook_ID , Facebook_Name
 7807422276 , How I Met Your Mother
 46472432035 , WAVY TV 10
 191211482752 , XL Rame
-7224956785 , Samsung Mobile USA
 7010901522 , FOX6 News Milwaukee
 21278871488 , Mountain Dew
 139619776061785 , Gronkh
