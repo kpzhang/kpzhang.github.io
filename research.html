@@ -77,32 +77,7 @@ MathJax.Hub.Config({
     <button class="tablinks" onclick="openPub(event, 'Journal')" id="defaultOpen">Journal</button>
     <button class="tablinks" onclick="openPub(event, 'Conference')">Conference</button>
     <button class="tablinks" onclick="openPub(event, 'Report')">Report</button>
-  </div> 
-
-  <script>
-    function openPub(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-      
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-      
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-      
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    
-      document.getElementById("defaultOpen").click();
-    </script>
+</div> 
 
 <p><a name="research"></p>
                                                             
@@ -910,21 +885,33 @@ MathJax.Hub.Config({
         </ul>    
 </div>       
 
-<!--p><a name="Tutorials"> </a></p>
-<h2 id="tutorials">Tutorials</h2>
-                    <ul>
-                        <li><font culor="black"><a href="http://2019.scecr.org">SCECR 2019</a></font>, Statistical Challenges in Electronic Commerce Research | <a href="./tutorial/SCECR2019"><font culor="blue">>> More</font></a></li>
-                        <li><font culor="black"><a href="https://www.gserm.ch/">St. Gallen 2019</a></font>, University of St. Gallen: Analyzing Unstructured Data | <a href="./tutorial/SG2019"><font culor="blue">>> More</font></a></li>
-                        <li><font culor="black"><a href="https://www.gserm.ch/">St. Gallen 2018</a></font>, University of St. Gallen: Analyzing Unstructured Data | <a href="./tutorial/SG2018"><font culor="blue">>> More</font></a></li>
-                        <li><font culor="black"><a href="http://www.ifi.uzh.ch/teaching/studiengaenge/phd/summer/summerschoul2015.html">IFI 2015</a></font>, University of Zurich: Big Data Algorithm Design | <a href="./tutorial/IFI2015"><font culor="blue">>> More</font></a></li>
-                        <li><font culor="black"><a href="http://amcis2014.aisnet.org/">AMCIS 2014</a>, Big Data Algorithms and Applications Under Hadoop</font> | <a href="./tutorial/amcis2014.html"><font culor="blue">>> More</font></a></li>
-                    </ul-->
+<script>
+    function openPub(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    
+      document.getElementById("defaultOpen").click();
+</script>
                     
                 
-    </table>
-
-            
-            
+    </table>    
         </div>
     </body>
 </html>
