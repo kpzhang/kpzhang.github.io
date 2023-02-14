@@ -18,6 +18,11 @@ MathJax.Hub.Config({
 <!-- End MathJax -->
 
 <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<script>
 function openPub(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -97,7 +102,7 @@ function openPub(evt, cityName) {
 </div>
     
 <div class="tab">
-    <button class="tablinks" onclick="openPub(event, 'Journal')">Journal</button>
+    <button class="tablinks" onclick="openPub(event, 'Journal')" id="defaultOpen">Journal</button>
     <button class="tablinks" onclick="openPub(event, 'Conference')">Conference</button>
     <button class="tablinks" onclick="openPub(event, 'Report')">Report</button>
   </div> 
