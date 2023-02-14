@@ -17,6 +17,7 @@ MathJax.Hub.Config({
 </script>
 <!-- End MathJax -->
 
+<script>
 function openPub(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -37,7 +38,9 @@ function openPub(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+</script>
 
+<style>
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -73,7 +76,7 @@ function openPub(evt, cityName) {
   border: 1px solid #ccc;
   border-top: none;
 }
-
+</style>
 
 </head>
 <body>
