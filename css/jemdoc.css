@@ -201,6 +201,7 @@ dd > *:first-child {
 ul {
 	list-style-position: outside;
 	list-style-type: square;
+	font-size: 1em;
 }
 
 ol {
