@@ -383,4 +383,7 @@ table.imgtable, table.imgtable td {
 }
 
 /*#schedule { background: gray; }*/
-#schedule tr.r1 {font-weight: bold; text-algin: left;}
+#schedule tr.r1 {
+	font-weight: bold; 
+	text-algin: left;
+}
