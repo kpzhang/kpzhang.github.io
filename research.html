@@ -38,12 +38,13 @@ MathJax.Hub.Config({
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #bcb6b6;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #cf4b4b;
+  color: white;
 }
 
 /* Style the tab content */
@@ -52,6 +53,17 @@ MathJax.Hub.Config({
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+ul {
+   list-style: none;
+   margin-left: 0;
+   padding-left: 1em;
+   text-indent: -1em;
+}
+
+li:before {
+  content: url("./img/book.svg");
 }
 </style>
 
@@ -63,7 +75,6 @@ MathJax.Hub.Config({
 <div class="menu-category"><a href="http://www.umd.edu/"><img src="img/umd-logo.jpeg" width=165px align="center"></a></div>
 <div class="menu-item"><a href="index.html"><br />Home</a></div>
 <div class="menu-item"><a href="research.html" class="current">Research</a></div>
-<!--div class="menu-item"><a href="research.html#pubs">Publications</a></div-->
 <div class="menu-item"><a href="teaching.html">Teaching</a></div>
 <div class="menu-item"><a href="student.html">Members</a></div>
 <div class="menu-item"><a href="reading.html">Reading group</a></div>
@@ -81,9 +92,8 @@ MathJax.Hub.Config({
     <button class="tablinks" onclick="openPub(event, 'Report')">Report</button>
 </div> 
 
-<p><a name="research"></p>
-                                                            
-<p><a name="pubs"> </a></p>
+
+                                                    
 
 <div id="Business Journal" class="tabcontent">
     <ul>
