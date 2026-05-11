@@ -21,6 +21,48 @@
     	}
   	</style>
 
+	<style>
+    .publication-title-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .abstract-toggle {
+        width: 26px;
+        height: 26px;
+        border: none;
+        border-radius: 50%;
+        background-color: #0066CC;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1;
+        cursor: pointer;
+        flex-shrink: 0;
+        margin-top: 0.15rem;
+    }
+
+    .abstract-toggle:hover {
+        background-color: #004C99;
+    }
+
+    .abstract-box {
+        display: none;
+        margin: 0.6rem 0 0.8rem 0;
+        padding: 0.85rem 1rem;
+        background-color: #FFF4CC;
+        border-left: 5px solid #0066CC;
+        border-radius: 6px;
+        color: #222;
+        font-size: 0.95rem;
+    }
+
+    .abstract-box.show {
+        display: block;
+    }
+</style>
+	
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -142,20 +184,6 @@
 
 			<h3 class="blt-h3 blt-weight-bold">Journal</h3>
     		<hr class="space-sm">
-
-			<!--div>
-				<div class="row">
-					<div class="col-xs-12 false">
-						<p class="blt-h4 blt-weight-bold">
-          					<a href='#'>Closing the Training-Sampling Gap in Conditional Diffusion Models for Versatile Image Restoration</a>
-        				</p>
-        				<hr class="space-4">
-						<p class="blt-p">Yue Lei, Jiati Cai, Wenxin Tai, Ting Zhong, Jin Yin, Kunpeng Zhang, and Fan Zhou</p>
-						<p class="blt-p blt-color-b2">Pattern Recognition, Accepted</p>
-					</div>
-				</div>
-				<hr class="space-md">
-		</div-->
 			
 		   <div>
 				<div class="row">
@@ -171,6 +199,32 @@
 				</div>
 				<hr class="space-md">
 		</div>
+
+		<div>
+    	<div class="row">
+        <div class="col-xs-12 false">
+
+            <div class="publication-title-row">
+                <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">+</button>
+                <p class="blt-h4 blt-weight-bold">
+                    <a href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5842102'>Identifying AI Jobs in Online Job Postings: Existing Versus Newly Developed LLM-Based Approaches and A Dataset on Demand for AI Jobs among Russell 1000 Firms, 2018–2025</a>
+                </p>
+            </div>
+
+            <div class="abstract-box">
+                <strong>Abstract:</strong> Add the abstract for this paper here.
+            </div>
+
+            <hr class="space-4">
+            <p class="blt-p">Frankie H. Shi, Anil Gupta, Waverly W. Ding, and Kunpeng Zhang</p>
+            <p class="blt-p"><a href='https://huggingface.co/FrankieShih/umd_llm_based_ai_jobs_classifier'>[code]</a></p>
+            <p class="blt-p blt-color-b2">Model available upon request</p>
+
+        </div>
+    	</div>
+    	<hr class="space-md">
+		</div>
+		
 		<div>
 				<div class="row">
 					<div class="col-xs-12 false">
@@ -285,5 +339,14 @@
 			
 		</div>
     </main>
+
+	<script>
+    function toggleAbstract(button) {
+        const abstractBox = button.closest(".col-xs-12").querySelector(".abstract-box");
+        abstractBox.classList.toggle("show");
+        button.textContent = abstractBox.classList.contains("show") ? "−" : "+";
+    }
+	</script>
+	
 </body>
 </html>
