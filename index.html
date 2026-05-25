@@ -44,6 +44,24 @@
             border-radius: 50%;
             margin-bottom: 1rem;
         }
+		.profile-icons {
+            text-align: center;
+            margin-top: -0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-icons a {
+            display: inline-block;
+            margin: 0 6px;
+        }
+
+        .profile-icons img {
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+            margin-bottom: 0;
+            vertical-align: middle;
+        }
         main {
             max-width: 700px;
             margin: 2rem auto;
@@ -88,7 +106,18 @@
 <body>
     <header>
         <!-- Replace with your actual picture URL -->
-        <a href='https://www.rhsmith.umd.edu/directory/kunpeng-zhang'><img src="img/kz.png" alt="Kunpeng 'KZ' Zhang"></a>
+        <a href='https://www.rhsmith.umd.edu/directory/kunpeng-zhang'>
+			<img src="img/kz.png" alt="Kunpeng 'KZ' Zhang">
+		</a>
+		<div class="profile-icons">
+            <a href="https://www.rhsmith.umd.edu/directory/kunpeng-zhang" target="_blank" title="Homepage">
+                <img src="img/home.png" alt="Homepage">
+            </a>
+
+            <a href="https://scholar.google.com/citations?user=rnpemAoAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                <img src="img/gscholar.png" alt="Google Scholar">
+            </a>
+        </div>
         <h2 class="blt-h2 blt-weight-bold">Kunpeng 'KZ' Zhang</h2>
     </header>
     <main>
@@ -106,9 +135,9 @@
 			College park, MD 20740<br />
 			(301) 405-0702 (O)
         </p>
-        <p>
+        <!--p>
            <a href="https://scholar.google.com/citations?user=rnpemAoAAAAJ&hl=en" target="_blank" style="float:left;"><img src='img/gscholar.png' width="20" height="20" style="float:left; margin-right: 5px;">Google Scholar</a>
-		</p>
+		</p-->
 		<p>
 		   <a href="https://aimaps.ai"><img src="./img/aimaps-logo.png" width="180"></a>
 		</p>
